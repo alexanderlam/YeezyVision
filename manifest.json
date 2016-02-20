@@ -3,19 +3,20 @@
 {
 	"manifest_version": 2,
 
-	"name": "Test1"
-	"description": "This extension groups similar tabs together",
+	"name": "YeezyVision"
+	"description": "Extension made for Yeezy's supporter fan club ",
 	"version": "1.0",
 
 	"browser_action": {
-		"default_icon": "icone.png"
-	},
+		"default_icon": "icon.png"
+
+},
 	"permissions": [
 		"activeTab",
 		"tabs"
 	],
-	"background": {dd
-		"scripts": ["tabs.js"],
+	"background": {
+		"scripts": [""],
 		"persistant": false
 	}
 }
