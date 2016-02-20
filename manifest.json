@@ -8,16 +8,18 @@
 	"version": "1.0",
 
 	"browser_action": {
+        "name":"YeezyVision"
+        "icons": ["icon.png"]
 		"default_icon": "icon.png"
-
 },
 	"permissions": [
 		"activeTab",
 		"tabs"
 	],
-	"background": {
-		"scripts": ["imageresponder.js"],
-		"persistant": false
+	"content-scripts": [{
+        "js": ["jquery.min.js", "background.js" ],
+        "matches": ["http://*/*", "https://*/*"]
+    }]
 	}
 }
 
