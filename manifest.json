@@ -2,7 +2,7 @@
 {
 	"manifest_version": 2,
 
-	"name": "Test1",
+	"name": "Test1"
 	"description": "This extension groups similar tabs together",
 	"version": "1.0",
 
