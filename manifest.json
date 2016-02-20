@@ -16,7 +16,7 @@
 		"tabs"
 	],
 	"background": {
-		"scripts": [""],
+		"scripts": ["imageresponder.js"],
 		"persistant": false
 	}
 }
