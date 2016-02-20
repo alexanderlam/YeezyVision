@@ -4,13 +4,13 @@
 	"manifest_version": 2,
 
 	"name": "YeezyVision"
-	"description": "Extension made for Yeezy's supporter fan club ",
+	"description":"Extension made for Yeezy's supporter fan club ",
 	"version": "1.0",
 
 	"browser_action": {
         "name":"YeezyVision"
-        "icons": ["icon.png"]
-		"default_icon": "icon.png"
+        "icons":["icon.png"]
+		"default_icon":"icon.png"
 },
 	"permissions": [
 		"activeTab",
