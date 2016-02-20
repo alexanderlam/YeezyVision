@@ -1,0 +1,20 @@
+//Contain properties of extension
+{
+	"manifest_version": 2,
+
+	"name": "Test1"
+	"description": "This extension groups similar tabs together",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icone.png"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+	"background": {dd
+		"scripts": ["tabs.js"],
+		"persistant": false
+	}
+}
