@@ -1,26 +1,24 @@
 {
 	"manifest_version": 2,
 
-	"name": "YeezyVision"
+	"name": "YeezyVision",
 	"description": "Extension made for Yeezy's supporter fan club ",
 	"version": "1.0",
-
-	"browser_action": {
-        "name": "YeezyVision"
-        "icons": ["icon.png"]
+    "browser_action": {
+        "name": "YeezyVision",
+        "icons": ["icon.png"],
 		"default_icon": "icon.png"
-},
+    },
 	"permissions": [
-		"activeTab",
+		"activeTab"
 	],
     "background": {
-        "scripts": ["imageresponder.js"]
+        "scripts": ["imageresponder.js"],
         "persistent": false
     }
 	"content-scripts": [{
-        "js": ["jquery.min.js", "imageresponder.js" ],
+        "js": ["jquery-2.2.0.js", "imageresponder.js" ],
         "matches": ["http://*/*", "https://*/*"]
     }]
-	}
 }
 
