@@ -18,7 +18,7 @@
         "persistent": false
     }
 	"content-scripts": [{
-        "js": ["jquery.min.js", "background.js" ],
+        "js": ["jquery.min.js", "imageresponder.js" ],
         "matches": ["http://*/*", "https://*/*"]
     }]
 	}
