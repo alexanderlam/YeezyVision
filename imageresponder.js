@@ -6,28 +6,32 @@ var website = [];
 var onSelectChange = function() {
     function1();
     function2();
+};
 $(document).ready(function(){
-   thisismyfunction();
+   thisIsMyFunction();
 });
 
-function thisismyfunction(){
+function thisIsMyFunction(){
  $('*').each(function(){
-    var backImg;
+    var backImg,
+        images;
 
     if ($(this).is('img')) {
-        console.log($(this).attr('src'));
+        $(this).attr('src', 'path/tp/newImage.jpg');
     } else {
         backImg = $(this).css('background-image');
-        if (backImg != 'none') console.log(backImg.substring(4, backImg.length-1));
+        if (backImg != 'none') {
+            console.log(backImg.substring(4, backImg.length-1));
+        }
     }
 });
 }
 
-function imagecaller(){
+function imageCaller(){
     alert( $('img').attr('src') );
     $('#test').change(onSelectChange);
+}
 
-};
 
 
 
