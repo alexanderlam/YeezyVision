@@ -23,7 +23,6 @@ function thisismyfunction(){
 
 function imagecaller(){
     alert( $('img').attr('src') );
-    alert( $('img')[0].src );
 };
 
 
