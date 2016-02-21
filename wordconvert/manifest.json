@@ -1,13 +1,12 @@
 {
-"manifest_version": 2,
+    "manifest_version": 2,
     "name": "yeezyconvert",
     "description": "Converts the to yeezy",
     "version": "0.1",
     "icons": {
         "128": "icon.png"
     },
-    "background":
-    {
+    "background": {
         "scripts": ["jquery-2.2.0.min.js"]
     },
 
@@ -18,8 +17,10 @@
                 "https://*/*"
             ],
             "js": [
-                "content.js",
-                "jquery-2.2.0.min.js"
+                "jquery-2.2.0.min.js",
+                "functions.js",
+                "content.js"
+
             ],
             "run_at": "document_end"
         }
