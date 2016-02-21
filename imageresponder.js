@@ -17,7 +17,7 @@ function replaceImages(){
         images;
 
     if ($(this).is('img')) {
-        $(this).attr('src', 'path/tp/newImage.jpg');
+       //replaces the picture with Kanye $(this).attr('src', 'path/tp/newImage.jpg');
     } else {
         backImg = $(this).css('background-image');
         if (backImg != 'none') {
