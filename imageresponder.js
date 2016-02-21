@@ -5,7 +5,7 @@ var nameid= [];
 var website = [];
 
 $(document).ready(function(){
-   imagecaller();
+   thisismyfunction();
 });
 
 function thisismyfunction(){
@@ -23,7 +23,14 @@ function thisismyfunction(){
 
 function imagecaller(){
     alert( $('img').attr('src') );
+    $('#test').change(onSelectChange);
+
+var onSelectChange = function() {
+    function1();
+    function2();
 };
 
+
+};
 
 
