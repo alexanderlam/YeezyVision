@@ -80,6 +80,20 @@ $.ajax(settings).done(function (response) {
         }});   
 }
 
+function getImage (callback){
+ var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://yepi.io/api/image",
+  "method": "GET",
+}
+
+$.ajax(settings).done(function (response) {
+if (callback && typeof (callback) === "function") {
+            callback(response);
+        }});
+    
+}
 function asyncLoop(iterations, func, callback) {
     var index = 0;
     var done = false;
