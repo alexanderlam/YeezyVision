@@ -32,6 +32,17 @@ function imageCaller(){
     $('#test').change(onSelectChange);
 }
 
+anim = setInterval(DoAnimation, 120);
+
+function DoAnimation () {
+            document.getElementById('anim').src = "media/Animation/" + index.toString() + ".png";
+            index++;
+            if (index == 30) {
+                clearInterval(anim);
+            }
+        }
+
+
 
 
 
