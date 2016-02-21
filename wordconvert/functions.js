@@ -111,3 +111,23 @@ function asyncLoop(iterations, func, callback) {
     loop.next();
     return loop;
 }
+
+function getFaceLocation(url,callback){
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.projectoxford.ai/face/v1.0/detect",
+  "method": "POST",
+  "headers": {
+    "ocp-apim-subscription-key": "fb66532ab1b640bf89a8c3cb07321ed7",
+    "content-type": "application/json",
+  },
+  "processData": false,
+  "data": "{\r\n    \"url\":\""+url+"\"\r\n}"
+}
+
+$.ajax(settings).done(function (response) {
+  callback(response);
+});   
+    
+}
