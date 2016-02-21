@@ -4,6 +4,7 @@
 	"name": "YeezyVision",
 	"description": "Extension made for Yeezy's supporter fan club ",
 	"version": "1.0",
+
     "browser_action": {
         "name": "YeezyVision",
         "icons": "favicon-96x96.png",
