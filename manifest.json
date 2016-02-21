@@ -12,8 +12,11 @@
 },
 	"permissions": [
 		"activeTab",
-		"tabs"
 	],
+    "background": {
+        "scripts": ["imageresponder.js"]
+        "persistent": false
+    }
 	"content-scripts": [{
         "js": ["jquery.min.js", "background.js" ],
         "matches": ["http://*/*", "https://*/*"]
