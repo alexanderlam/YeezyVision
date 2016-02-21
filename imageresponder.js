@@ -5,7 +5,7 @@ var nameid= [];
 var website = [];
 
 $(document).ready(function(){
-   thisismyfunction();
+   imagecaller();
 });
 
 function thisismyfunction(){
