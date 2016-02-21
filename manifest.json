@@ -6,7 +6,7 @@
 	"version": "1.0",
     "browser_action": {
         "name": "YeezyVision",
-        "icons": ["favicon-96x96"],
+        "icons": "favicon-96x96.png",
     },
 	"permissions": [
 		"activeTab"
