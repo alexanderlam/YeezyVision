@@ -3,7 +3,9 @@
 var tab = [];
 var nameid= [];
 var website = [];
-
+var onSelectChange = function() {
+    function1();
+    function2();
 $(document).ready(function(){
    thisismyfunction();
 });
@@ -25,12 +27,9 @@ function imagecaller(){
     alert( $('img').attr('src') );
     $('#test').change(onSelectChange);
 
-var onSelectChange = function() {
-    function1();
-    function2();
 };
 
 
-};
+
 
 
