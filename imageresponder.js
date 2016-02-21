@@ -32,9 +32,7 @@ function imageCaller(){
     $('#test').change(onSelectChange);
 }
 
-function swapImages(){
-    $("#myImage").attr("src", "path/to/newImage.jpg");
-}
+
 
 
 
