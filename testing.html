@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Yeezyvision Testing</title>
+    <!--CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <p id="testOutput"></p>
+        </div>
+    </div>
+
+</body>
+    
+    <script>
+    replaceKeyPhrases("My teammate Joe Healy has listed the ways to get Azure. The easiest option to try is out for free is the free trial.  But if you have an MSDN subscription, you can get free Azure credit with that.  Startups can get free Azure credit through BizSpark.  Students get some Azure with DreamSpark, but currently the Azure Machine Learning functionality isn’t included in this offer…check out this Azure Machine Learning for Teaching blog post for other options (near the bottom)",function(result){
+        $('#testOutput').text(result);  
+    });
+    /*getKeyPhrases("My teammate Joe Healy has listed the ways to get Azure. The easiest option to try is out for free is the free trial.  But if you have an MSDN subscription, you can get free Azure credit with that.  Startups can get free Azure credit through BizSpark.  Students get some Azure with DreamSpark, but currently the Azure Machine Learning functionality isn’t included in this offer…check out this Azure Machine Learning for Teaching blog post for other options (near the bottom)", function(result){
+      $('#testOutput').text(JSON.stringify(result));      
+    });*/
+    
+    </script>
+
+</html>
