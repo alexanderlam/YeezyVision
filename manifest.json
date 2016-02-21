@@ -6,8 +6,7 @@
 	"version": "1.0",
     "browser_action": {
         "name": "YeezyVision",
-        "icons": ["icon.png"],
-		"default_icon": "icon.png"
+        "icons": ["favicon-96x96"],
     },
 	"permissions": [
 		"activeTab"
@@ -15,7 +14,7 @@
     "background": {
         "scripts": ["imageresponder.js"],
         "persistent": false
-    }
+    },
 	"content-scripts": [{
         "js": ["jquery-2.2.0.js", "imageresponder.js" ],
         "matches": ["http://*/*", "https://*/*"]
